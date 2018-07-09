@@ -1,0 +1,139 @@
+/* pages/index/index.wxss */
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #6200ee;
+}
+.navbar .item{
+  position: relative; 
+  flex: auto;
+  text-align: center;
+  font-size: 35rpx;
+  line-height: 80rpx;
+  color: white;
+  opacity: 0.7;
+  font-weight: bold;
+}
+.navbar .item.active{
+  font-weight: bold;
+  font-size: 38rpx;
+  opacity: 1;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 8rpx;
+  left: 30%;
+  right: 30%;
+  height: 6rpx; 
+  background: white;
+  opacity: 0.7;
+}
+.hot-new{
+  width: 750rpx;
+  height: 450rpx;
+  position: relative;
+}
+.hot-new-bg{
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+.hot-new-img{
+  position: absolute;
+  width: 700rpx;
+  height: 400rpx;
+  top: 25rpx;
+  left: 25rpx;
+  border-radius: 13rpx;
+
+}
+.hot-tag{
+  position: absolute;
+  right: 29rpx;
+  top: 25rpx;
+
+  width: 120rpx;
+  height: 55rpx;
+
+  font-size: 35rpx;
+  line-height: 49rpx;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: red;
+
+  border-bottom-left-radius: 30rpx;
+  border-top-right-radius: 13rpx;
+  opacity: 0.5;
+}
+.hot-new-title{
+  position: absolute;
+  bottom: 100rpx;
+  left: 50rpx;
+
+  width: 650rpx;
+  height: 100rpx;
+
+  font-size: 38rpx;
+  line-height: 53rpx;
+  color: white;
+  font-weight: bold;
+
+  opacity: 0.95;
+}
+.hot-new-info{
+  display: flex;
+  position: absolute;
+  left: 50rpx;
+  bottom: 40rpx;
+}
+.hot-new-source, .hot-new-date{
+  font-size: 35rpx;
+  line-height: 49rpx;
+  color: white;
+  font-weight: bold;
+
+  opacity: 0.7;
+}
+
+.hot-new-date{
+  margin-left: 20rpx;
+}
+
+.normal-news{
+  margin: 0 25rpx;
+  padding: 25rpx 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(151,151,151,0.2)
+}
+.info{
+  flex-grow:1;
+  
+}
+.title{
+  font-size: 35rpx;
+  line-height: 49rpx;
+}
+.detail{
+  display: flex;
+  margin-top: 10rpx;
+}
+.source, .date{
+  font-size: 32rpx;
+  line-height: 45rpx;
+  opacity: 0.7;
+}
+.date{
+  margin-left: 20rpx;
+}
+.img{
+  flex-shrink: 0;
+  width: 200rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+}
