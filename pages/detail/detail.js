@@ -18,6 +18,9 @@ Page({
     })
     this.getNewsDetail()
   },
+  onTapBack(){
+    wx.navigateBack()
+  },
   getNewsDetail(callback) {
     wx.showLoading({
       title: '数据加载中',

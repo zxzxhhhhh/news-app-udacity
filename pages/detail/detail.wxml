@@ -1,4 +1,8 @@
 <!--pages/detail/detail.wxml-->
+<view class='navbar'>
+  <image class='back' src='../images/back.jpg' bindtap='onTapBack'></image>
+  <view class='page-title'>快读·资讯</view>
+</view>
 <view class='title'>{{newsResult.title}}</view>
 <view class='news-info'>
   <view class='source'>{{newsResult.source}}</view>
