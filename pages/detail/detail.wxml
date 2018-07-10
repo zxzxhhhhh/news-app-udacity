@@ -6,7 +6,7 @@
 <view class='title'>{{newsResult.title}}</view>
 <view class='news-info'>
   <view class='source'>{{newsResult.source}}</view>
-  <view class='time'>{{newsResult.date}}</view>
+  <view class='time'>{{(newsResult.date)? m1.formatDate(newsResult.date):""}}</view>
   <view class='read-count'>阅读 {{newsResult.readCount}}</view>
 </view>
 
@@ -23,3 +23,12 @@
   </view>
 </block>
 </view>
+
+
+
+<wxs module="m1">
+  var formatDate = function(str) {
+    return str.slice(5,10) + " " + str.slice(11,16);
+  }
+  module.exports.formatDate = formatDate;
+</wxs>

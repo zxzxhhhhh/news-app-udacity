@@ -1,4 +1,5 @@
 <!--pages/index/index.wxml-->
+
 <view class='navigation-bar'>
   <image class='logo' src='../images/logo.jpg'></image>
   <view class='page-title'>快读·资讯</view>
@@ -19,7 +20,7 @@
   <view class='hot-new-title'>{{newsList[0].title}}</view>
   <view class='hot-new-info'>
     <view class='hot-new-source'>{{newsList[0].source}}</view>
-    <view class='hot-new-date'>{{newsList[0].date}}</view>
+    <view class='hot-new-date'>{{(newsList[0].date)? m1.formatDate(newsList[0].date):""}}</view>
   </view>
 </navigator>
 
@@ -28,8 +29,16 @@
     <view class='title'>{{item.title}}</view>
     <view class='detail'>
       <view class='source'>{{item.source}}</view>
-      <view class='date'>{{item.date}}</view>
+      <view class='date'>{{(item.date)? m1.formatDate(item.date):""}}</view>
     </view>
   </view>
   <image class='img' mode='aspectFill' src='{{item.firstImage? item.firstImage : "../images/default.jpg" }}'></image>
 </navigator>
+
+
+<wxs module="m1">
+  var formatDate = function(str) {
+    return str.slice(5,10) + " " + str.slice(11,16);
+  }
+  module.exports.formatDate = formatDate;
+</wxs>
