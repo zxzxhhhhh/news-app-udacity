@@ -1,4 +1,5 @@
 // pages/index/index.js
+//const util = require('../../utils/util.js')
 
 const newsTypes = ['gn','gj','cj','yl','js','ty', 'other']
 
@@ -38,6 +39,7 @@ Page({
    */
   onLoad: function (options) {
     this.getNewsList()
+    //console.log(util.formatTime(new Date))
   },
 
   getNewsList(callback) {
