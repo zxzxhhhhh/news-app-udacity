@@ -48,20 +48,20 @@ Page({
       url: 'https://test-miniprogram.com/api/news/list',
       data: { 'type': this.data.newsTypeCode },
       success: res => {
-        wx.hideLoading()
+        
         console.log(res.data.result);
         this.setData({
           newsList: res.data.result
         })
       },
       fail: result => {
-        wx.hideLoading()
         wx.showToast({
           title: '加载失败',
         })
         console.log('error!');
       },
       complete: () => {
+        wx.hideLoading()
         callback && callback();
       }
     })
