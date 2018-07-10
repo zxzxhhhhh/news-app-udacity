@@ -13,8 +13,8 @@
 </view>
 
 <navigator class='hot-new' url='../detail/detail?id={{newsList[0].id}}'>
-  <image class='hot-new-bg' src='{{newsList[0].firstImage ? newsList[0].firstImage: "../images/default.jpg" }}'></image>
-  <image class='hot-new-img' src='{{newsList[0].firstImage ? newsList[0].firstImage: "../images/default.jpg"}}'></image>
+  <image class='hot-new-bg' mode='aspectFill' src='{{newsList[0].firstImage ? newsList[0].firstImage: "../images/default.jpg" }}'></image>
+  <image class='hot-new-img' mode='aspectFill' src='{{newsList[0].firstImage ? newsList[0].firstImage: "../images/default.jpg"}}'></image>
   <view class='hot-tag'>热门</view>
   <view class='hot-new-title'>{{newsList[0].title}}</view>
   <view class='hot-new-info'>
@@ -31,5 +31,5 @@
       <view class='date'>{{item.date}}</view>
     </view>
   </view>
-  <image class='img' src='{{item.firstImage? item.firstImage : "../images/default.jpg" }}'></image>
+  <image class='img' mode='aspectFill' src='{{item.firstImage? item.firstImage : "../images/default.jpg" }}'></image>
 </navigator>
