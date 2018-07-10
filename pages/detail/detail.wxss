@@ -37,19 +37,17 @@
   margin-left: 20rpx;
   flex-grow: 1;
 }
-.read-count{
-
-}
 .content{
   margin: 20rpx 30rpx;
 }
 .content-p{
   font-size: 35rpx;
-  line-height: 49rpx;
+  line-height: 52rpx;
+  margin: 10rpx;
 }
 .content-strong{
   font-size: 35rpx;
-  line-height: 49rpx;
+  line-height: 52rpx;
   font-weight: bold;
   margin: 30rpx 0;
 }
